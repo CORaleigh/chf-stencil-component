@@ -42,7 +42,7 @@ export class AppMap {
 
         this.municipalitiesFeatureLayer = new FeatureLayer({
           url:
-            "https://services.arcgis.com/Li1xnxaTwJ2lGrgz/arcgis/rest/services/Kommuner/FeatureServer/0"
+            "https://maps.raleighnc.gov/arcgis/rest/services/Planning/Overlays/MapServer/9"
         });
 
         this.esriMap.add(this.municipalitiesFeatureLayer);

@@ -15,7 +15,7 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "1.0.1",
+    "@stencil/core": "1.1.1",
     "@stencil/router": "1.0.1",
     "@stencil/sass": "1.0.1",
     "@types/arcgis-js-api": "4.11.0",
