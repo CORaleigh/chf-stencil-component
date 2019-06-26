@@ -17,5 +17,11 @@ export const config: Config = {
   plugins: [sass()],
   devServer: {
     root: "www"
-  }
+  },
+  outputTargets: [
+    {
+      type: 'www',
+      baseUrl: 'https://cityworkstest.raleighnc.gov//ncod'
+    }
+  ]
 };

@@ -42,7 +42,10 @@ export class AppMap {
 
         this.municipalitiesFeatureLayer = new FeatureLayer({
           url:
-            "https://maps.raleighnc.gov/arcgis/rest/services/Planning/Overlays/MapServer/9"
+            "https://maps.raleighnc.gov/arcgis/rest/services/Planning/Overlays/MapServer/9",
+            popupTemplate: {
+              content: "{*}"
+            }
         });
 
         this.esriMap.add(this.municipalitiesFeatureLayer);
@@ -75,8 +78,8 @@ export class AppMap {
 
         this.esriMapView = new EsriMapView({
           container: mapDiv,
-          zoom: 4,
-          center: [15, 65],
+          zoom: 13,
+          center: [-78.6382, 35.7796],
           map: this.esriMap
         });
       }
